@@ -32,6 +32,6 @@
       "src": "/twitter/:username",
       "dest": "/app.js",
       "methods": ["GET"]
-    },
+    }
   ]
 }
