@@ -4,32 +4,32 @@
   "builds": [{ "src": "app.js", "use": "@now/node-server" }],
   "routes": [
     {
-      "src": "/github/:username",
+      "src": "/api/github/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     },
     {
-      "src": "/gitlab/:username",
+      "src": "/api/gitlab/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     },
     {
-      "src": "/bitbucket/:username",
+      "src": "/api/bitbucket/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     },
     {
-      "src": "/facebook/:username",
+      "src": "/api/facebook/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     },
     {
-      "src": "/instagram/:username",
+      "src": "/api/instagram/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     },
     {
-      "src": "/twitter/:username",
+      "src": "/api/twitter/:username",
       "dest": "/app.js",
       "methods": ["GET"]
     }
