@@ -1,4 +1,37 @@
+  
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node-server" }]
+  "builds": [{ "src": "app.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/github/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/gitlab/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/bitbucket/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/facebook/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/instagram/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/twitter/:username",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+  ]
 }
